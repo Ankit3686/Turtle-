@@ -1,80 +1,32 @@
-# Turtle-
-#Indian Flag
-#draw indian flag
-import turtle
-turtle.title("Indian Flag")
-def rectangle(color):
-    tur.begin_fill()
-    for i in range(2):
-        tur.fillcolor(color)
-        tur.fd(200)
-        tur.right(90)
-        tur.fd(50)
-        tur.right(90)
-tur=turtle.Turtle()
-tur.speed(0)
-tur.up()
-tur.goto(0,-200)
-tur.down()
-tur.goto(0,300)
-rectangle("orange")
-tur.end_fill()
-tur.right(90)
-tur.up()
-tur.fd(50)
-tur.left(90)
+# Turtle
+Turtle Library in Python
+The turtle library is a popular Python module for introducing programming and graphics. It provides a fun, interactive way to create drawings and shapes using a virtual "turtle" that moves around the screen.
 
-def rectangle2():
-    for i in range(2):
-        tur.fd(200)
-        tur.down()
-        tur.right(90)
-        tur.fd(50)
-        tur.right(90)
-rectangle2()        
-tur.right(90)
-tur.up()
-tur.fd(50)
-tur.left(90)
-def rectangle3(color):
-    tur.begin_fill()
-    tur.fillcolor(color)
-    for i in range(2):
-        
-        tur.fd(200)
-        tur.down()
-        tur.right(90)
-        tur.fd(50)
-        tur.right(90)
-rectangle3("green")  
-tur.end_fill()              
-tur.up()
-tur.fd(100)
-tur.down()
-tur.circle(25)
-tur.setheading(90)
-tur.fd(50)
-tur.setheading(360)
-tur.right(90)
-tur.up()
-tur.fd(25)
-tur.right(90)
-tur.up()
-tur.fd(25)
-tur.right(180)
-tur.down()
-tur.fd(50)
-tur.up()
-tur.right(100)
-tur.fd(18)
-tur.right(120)
-tur.down()
-tur.fd(53)
-tur.up()
-tur.left(130)
-tur.fd(32)
+Common Turtle Methods
 
-tur.left(130)
-tur.down()
-tur.fd(50)
-tur.hideturtle()
+Movement
+forward(distance) or fd(distance) - Move forward
+backward(distance) or bk(distance) - Move backward
+right(angle) or rt(angle) - Turn right
+left(angle) or lt(angle) - Turn left
+goto(x, y) or setpos(x, y) - Move to specific coordinates
+setx(x) - Set x coordinate
+sety(y) - Set y coordinate
+
+Pen Control
+penup() or pu() - Lift the pen (stop drawing)
+pendown() or pd() - Lower the pen (start drawing)
+pensize(width) - Set line thickness
+pencolor(color) - Set pen color
+fillcolor(color) - Set fill color
+begin_fill() - Start filling a shape
+end_fill() - End filling a shape
+
+Turtle State
+speed(speed) - Set animation speed (0-10, 0 is fastest)
+hideturtle() - Make turtle invisible
+showturtle() - Make turtle visible
+isvisible() - Check if turtle is visible
+position() or pos() - Get current position
+heading() - Get current heading angle
+setheading(angle) - Set heading angle
